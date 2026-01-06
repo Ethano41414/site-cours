@@ -95,9 +95,9 @@
             <span class="vecteur">u</span> ⋅ <span class="vecteur">v</span> = <span style="color: red;">5</span> &times; <span style="color: #2798df;">4</span> + <span style="color: red;">2</span> &times; <span style="color: #2798df;">1</span> = 22
             <br><br>
             Par ailleur avec la formule originale: <br>
-            <span class="vecteur">u</span> ⋅ <span class="vecteur">v</span><br> = ‖<span class="vecteur">u</span>‖&times;‖<span class="vecteur">u</span>‖&times;cos( 0 )=‖<span class="vecteur">u</span>‖<sup>2</sup><br>
+            <span class="vecteur">u</span> ⋅ <span class="vecteur">u</span> = ‖<span class="vecteur">u</span>‖&times;‖<span class="vecteur">u</span>‖&times;cos( 0 )=‖<span class="vecteur">u</span>‖<sup>2</sup><br>
             ( cos(0)=1 car l'angle entre un vecteur et lui même est nul)<br>
-            Donc la norme d'un vecteur est la racine de son produit scalaire avec lui même
+            Donc la norme d'un vecteur est la racine de son produit scalaire avec lui même<br>
             ‖<span class="vecteur">u</span>‖ = <span class="sqrt"><span class="vecteur">u</span> ⋅ <span class="vecteur">u</span></span> = <span class="sqrt"><span class="vecteur">u</span><sup>2</sup></span>
             </menu>
             <br>
@@ -134,9 +134,10 @@
         <p>
             Dans ces exemple, le repère n°3 décide juste de remplacer les fameux <span class="vecteur">i</span> et <span class="vecteur">j</span> par <span class="vecteur">u</span> et <span class="vecteur">v</span>.<br>
             <br>
-            Dans ces exemple, le repère n°4 est tout a fait logique.<br>
+            Dans l'exemple 4, le repère n°4 est tout a fait logique.<br>
             Pourquoi ? Et bien c'est très logique, en mathématiques un vecteur n'est lié en aucuns cas à un point, il existe partout<br>
             Il n'est donc pas obligatoire de mettre les vecteurs unitaires <span class="vecteur">i</span> et <span class="vecteur">j</span> partant du point O.<br>
+            Et en plus j'ai inversé les deux i et j donc les coordonées sont inversées également
         </p>
         <p>
             Passons maintenant aux points.<br>
@@ -177,13 +178,13 @@
             
             Un triangle possède 3 points donc 3 vecteurs qui vont d'un point à un autre.<br>
             Nos outils principaux seront: la norme et le produit scalaire<br>
-            Comment faire alors pour reconnaitre les triangles basiques tel que l'isoscèle ?<br>
+            Comment faire alors pour reconnaitre les triangles basiques tel que l'isocèle ?<br>
             Si un triangle ABC est isocèle en A, alors on sait que ‖<span class="vecteur">AB</span>‖ = ‖<span class="vecteur">AC</span>‖<br>
-            car simplement les cotés AC et AB d'un isoscèle en A sont égaux.<br>
+            car simplement les cotés AC et AB d'un isocèle en A sont égaux.<br>
             Pour reconnaitre un triangle équilatéral, il faut alors que ‖<span class="vecteur">AB</span>‖ = ‖<span class="vecteur">AC</span>‖ = ‖<span class="vecteur">BC</span>‖<br>
             Voici un exemple visuel:<br>
         </p>
-        <img src="formes_01.jpg" class="images t60" alt="formes_01">
+        <img src="formes_00.jpg" class="images t60" alt="formes_00">
         <h3>Les quadrilatères</h3>
         <p>
             Pour un quadrilatère (4 points 4 cotés (ne se croisent pas) ) on peut y associer 4 vecteurs.<br>
@@ -195,12 +196,11 @@
             Les rectangles et les losanges sont une sous catégorie d'un parallèlogramme<br>
             Pour les deux ‖<span class="vecteur">AB</span>‖ = ‖<span class="vecteur">BC</span>‖ = ‖<span class="vecteur">CD</span>‖ = ‖<span class="vecteur">DA</span>‖<br>
         </p>
-        <img src="formes_02.jpg" class="images t60" alt="formes_02">
         <p>
             Par ailleur pour générer un parallèlogramme a partir d'un triangle, on prend un point et on y additionne les vecteurs liés a ce point<br>
             Si on à le triangle ABC alors on peut créer ABCD en supposant "D=A+<span class="vecteur">AB</span>+<span class="vecteur">AC</span>"
         </p>
-        <img src="formes_03.jpg" class="images t60" alt="formes_03">
+        <img src="formes_01.jpg" class="images t60" alt="formes_01">
         <p>
             Pour un rectangle, il suffit de montrer deux angles droits opposés, je veut dire par là que si on prend le coin inférieur gauche,<br>
             alors il faut prendre le coin supérieur droit du quadrilatère.<br>
@@ -228,25 +228,42 @@
         Les théorèmes les plus importants du cours de 4<sup>e</sup> sont également là:
         <h3>Théoreme de Pythagore</h3>
         <p>
-            Si ABC est un triangle rectangle en A
-            alors AB<sup>2</sup> + AC<sup>2</sup> = BC<sup>2</sup>
+            Si ABC est un triangle rectangle en A<br>
+            alors AB<sup>2</sup> + AC<sup>2</sup> = BC<sup>2</sup><br><br>
 
-            Réciproquement:
-            Si AB<sup>2</sup> + AC<sup>2</sup> = BC<sup>2</sup> alors ACB est rectangle en A
+            Réciproquement:<br>
+            Si AB<sup>2</sup> + AC<sup>2</sup> = BC<sup>2</sup> alors ACB est rectangle en A<br><br>
 
-            Si ABC est un triangle rectangle en A
-            ‖<span class="vecteur">AB</span>‖<sup>2</sup> + ‖<span class="vecteur">AC</span>‖<sup>2</sup> = ‖<span class="vecteur">BC</span>‖<sup>2</sup>
+            Si ABC est un triangle rectangle en A<br>
+            ‖<span class="vecteur">AB</span>‖<sup>2</sup> + ‖<span class="vecteur">AC</span>‖<sup>2</sup> = ‖<span class="vecteur">BC</span>‖<sup>2</sup><br><br>
 
-            Réciproquement si ‖<span class="vecteur">AB</span>‖<sup>2</sup> + ‖<span class="vecteur">AC</span>‖<sup>2</sup> = ‖<span class="vecteur">BC</span>‖<sup>2</sup> alors ABC est rectangle en A
+            Réciproquement si ‖<span class="vecteur">AB</span>‖<sup>2</sup> + ‖<span class="vecteur">AC</span>‖<sup>2</sup> = ‖<span class="vecteur">BC</span>‖<sup>2</sup> alors ABC est rectangle en A<br><br>
             
-            Comme ‖<span class="vecteur">u</span>‖² = <span class="vecteur">u</span> ⋅ <span class="vecteur">u</span>
-            Si <span class="vecteur">AB</span> ⋅ <span class="vecteur">AB</span> + <span class="vecteur">AC</span> ⋅ <span class="vecteur">AC</span> = <span class="vecteur">BC</span> ⋅ <span class="vecteur">BC</span>
+            Comme ‖<span class="vecteur">u</span>‖² = <span class="vecteur">u</span> ⋅ <span class="vecteur">u</span><br>
+            Si <span class="vecteur">AB</span> ⋅ <span class="vecteur">AB</span> + <span class="vecteur">AC</span> ⋅ <span class="vecteur">AC</span> = <span class="vecteur">BC</span> ⋅ <span class="vecteur">BC</span><br><br>
 
-            Réciproquement si <span class="vecteur">AB</span> ⋅ <span class="vecteur">AB</span> + <span class="vecteur">AC</span> ⋅ <span class="vecteur">AC</span> = <span class="vecteur">BC</span> ⋅ <span class="vecteur">BC</span> alors ABC est rectangle en A
+            Réciproquement si <span class="vecteur">AB</span> ⋅ <span class="vecteur">AB</span> + <span class="vecteur">AC</span> ⋅ <span class="vecteur">AC</span> = <span class="vecteur">BC</span> ⋅ <span class="vecteur">BC</span> alors ABC est rectangle en A<br>
         </p>
+        <img src="formes_03.jpg" class="images t60" alt="formes_03">
         <img src="formes_04.jpg" class="images t60" alt="formes_04">
-        <h3>Théoreme de Thalès (vous le verrez jamais sauf cas très particliers) généralisé aux vecteurs</h3>
+        <h3>Théoreme de Thalès généralisé aux vecteurs (vous ne le verrez jamais sauf cas très particlier, meme moi je l'ai toujours pas vu)</h3>
         <h2>Repères non orthonormés</h2>
+        <p>
+            Dans certains cas (assez souvent en seconde), vous aurez des repères non orthonormés.<br>
+            Et du calculs de vecteurs dans ce repère, et il y a deux cas:<br>
+            Soit on te précise que le repère existe en fonction du repère othonormé:<br>
+            On se place dans le repère (O,<span class="vecteur">i</span>,<span class="vecteur">j</span>) avec <span class="vecteur">i</span>=(5,7) et <span class="vecteur">j</span>=(1,1)<br>
+            (ils te montrent le repère avec un point A et ils te disent)<br>
+            Déterminez les coordonnées du point A<br>
+        </p>
+        Prévient moi si tu veux que je détaille cette partie mais je n'ai pas grand chose à dire dessus.<br>
+        Je pense pas pouvoir aider sur ça.
+        <img src="repere_01.jpg" class="images t60" alt="repere_01">
+        <img src="repere_02.jpg" class="images t60" alt="repere_02">
+        <h2>Exemples d'uilisations de plusieurs lois entre elles</h2>
+        <img src="repere_03.jpg" class="images t60" alt="repere_03">
+        <br><br>Exercices vecteurs<br><a href="../anexe/vecteurs/main.html">Annexe sur les vecteurs</a><br>
+
         <p><br><br><br><br><br></p>
     </div>
 

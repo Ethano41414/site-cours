@@ -4,7 +4,7 @@
 		{
 			"label": "run main",
       		"type": "shell",
-      		"command": "start vecteurs/vecteurs.html",
+      		"command": "start index.html",
       		"group": "build",
       		"problemMatcher": []
 		}
