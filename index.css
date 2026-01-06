@@ -1,0 +1,19 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.main_part {
+    width: 50%; /*taille du bloc*/
+    margin: auto; /**/
+    padding: 20px; /*décalage interne des éléments*/
+    background-color: #e7e7e7;
+    border-radius: 10px; /*contours*/
+    text-align: left; /*centrer le texte dans le bloc*/
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    line-height: 1.5;
+}

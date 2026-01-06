@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Vecteurs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <a href="../index.html"><button class="return_button">Retourner à la page d'acceil</button></a>
+    <div class="main_part">
+        <h1 class="title_vecteurs">Les vecteurs</h1>
+        <h2>Vecteur</h2>
+        <p>
+            Dans un repère orthonormé (ce qui ne sera pas toujours le cas).<br>
+            possèdant comme origine le point O et comme vecteurs unitaires du plan <span class="vecteur">i</span> et <span class="vecteur">j</span><br>
+            ( le repère (O, <span class="vecteur">i</span>, <span class="vecteur">j</span>) )<br>
+            <br>
+            Un vecteur (en 2 dimentions) peut être vu comme une flèche possèdant:
+            <ul class="listage">
+            <li>une direction (orientation selon une droite)</li>
+            <li>un sens ( ↗ ou ↙ )</li>
+            <li>une norme ( la taille du vecteur )</li>
+            </ul>
+        <br><br><br>
+            Un vecteur est également une <span>combinaison linéaire</span>
+            <br><br>
+            Exemple:<br>
+            on prend un vecteur <span class="vecteur">u</span> s'écrivant <span class="vecteur">u</span>=( x ; y ) peut s'écrire <span class="vecteur">u</span>= x &times; <span class="vecteur">i</span> + y &times; <span class="vecteur">j</span><br>
+            Bien sûr un vecteur peut contenir des coordonées négatives: <span class="vecteur">u</span>=( 7 ; -3 ) signifie simplement que le vecteur vas globalement vers le sud-est
+        </p>
+        <h2>Relation de Chales</h2>
+        <p>
+            Si <span class="vecteur">u</span> et <span class="vecteur">v</span> sont deux vecteurs tel que <span class="vecteur">u</span>=( x<sub>1</sub> ; y<sub>1</sub> ) et <span class="vecteur">v</span>=( x<sub>2</sub> ; y<sub>2</sub> )<br>
+            alors on peut construire un vecteur <span class="vecteur">w</span> tel que<br>
+            <span class="vecteur">w</span>=<span class="vecteur">u</span> + <span class="vecteur">v</span> = ( x<sub>1</sub>+x<sub>2</sub> ; y<sub>1</sub>+y<sub>2</sub> )<br>
+            <img src="chales.jpg" class="images t50" alt="chales">
+            <br><br>
+            Si <span class="vecteur">u</span>=( x ; y )  alors 2 &times; <span class="vecteur">u</span>=2<span class="vecteur">u</span>=( 2x ; 2y )
+            <br><br>
+            Exemple:<br>
+            Si on à <span class="vecteur">t</span>=( 2 ; 3 ) et <span class="vecteur">v</span>=( 8 ; 6 )<br>
+            alors:    <span class="vecteur">t</span>+<span style="color: red;">4</span><span class="vecteur">v</span>=( 2 + <span style="color: red;">4</span> &times; 8 ; 3 + <span style="color: red;">4</span> &times; 6 )=( 34 ; 27 )<br>
+            de même:  <span style="color: red;">2</span><span class="vecteur">t</span><span style="color: #2798df;">-3</span><span class="vecteur">v</span> = <span style="color: red;">2</span><span class="vecteur">t</span>+<span style="color: #2798df;">(-3)</span><span class="vecteur">v</span> = ( <span style="color: red;">2</span>&times;2+<span style="color: #2798df;">(-3)</span>&times;8 ; <span style="color: red;">2</span>&times;3+<span style="color: #2798df;">(-3)</span>&times;6 ) = ( -20 ; -12 )<br>
+            
+            Remarque:<br>
+            Il faut toujours se dire qu'on additionne les x avec les x et les y avec les y<br>
+            on peut également le voir comme ceci: 
+            <div class="addition">
+                <div class="ligne">  ( 2 ; 3 )</div>
+                <div class="ligne">+ ( 8 ; 6 )</div>
+                <hr>
+                <div class="ligne resultat">  ( 10 ; 9 )</div>
+            </div>
+        </p>
+        <h2>Norme d'un vecteur</h2>
+        <p>
+            La norme d'un vecteur <span class="vecteur">u</span> est notée ‖<span class="vecteur">u</span>‖ et représente sa longueur<br>
+            Elle est calculable par un simple théorème de Pythagore:
+        </p>
+        <img src="vector_norm.jpg" alt="Norme de vecteur">
+        <h2>Angle orienté entre deux vecteurs</h2>
+        <img src="orient_vector.jpg" class="images t75" alt="angle vecteur">
+        <p>
+            Commençons directement par l'exemple ci-dessus:<br>
+            Si on fait un calcul on se rend compte que l'angle entre les deux vecteurs <span class="vecteur">u</span> et <span class="vecteur">v</span> est de &pi;/4<br>
+            L'angle orienté entre <span class="vecteur">u</span> et <span class="vecteur">v</span>, noté ( <span class="vecteur">u</span> , <span class="vecteur">v</span> )<br>
+            l'angle allant de <span class="vecteur">u</span> vers <span class="vecteur">v</span> dans le sens trigonométrique.<br>
+            Dans cet exemple-ci, comme pour aller de <span class="vecteur">u</span> vers <span class="vecteur">v</span> on vas dans le sens trigonométrique.<br>
+            <span class="sous-rouge">( <span class="vecteur">u</span> , <span class="vecteur">v</span> )</span> = &pi;/4<br>
+            Et <span class="sous-bleu">( <span class="vecteur">v</span> , <span class="vecteur">u</span> )</span> = -&pi;/4 car on vas dans le sens opposé au sens trigonométrique<br>
+            (personnelement j'ai appris cette notion tard car en seconde on ne me l'avait pas appris alors que c'est au programme)
+        </p>
+        <h2>Produit Scalaire</h2>
+        <p>
+            Le produit scalaire est une sorte de multiplication entre deux vecteurs (c'est pas vraiment le cas mais on utilise les mêmes signes)<br>
+            Il y a deux manières de le calculer:
+            <ul class="listage">
+            <li>Par coordonnées<br>
+                Si on a <span class="vecteur">u</span>=( x<sub>1</sub> ; y<sub>1</sub> ) et <span class="vecteur">v</span>=( x<sub>2</sub> ; y<sub>2</sub> )<br>
+                alors le produit scalaire de <span class="vecteur">u</span> et <span class="vecteur">v</span> est:<br>
+                <span class="vecteur">u</span> ⋅ <span class="vecteur">v</span> = <span class="vecteur">u</span> &times; <span class="vecteur">v</span> = x<sub>1</sub>x<sub>2</sub> + y<sub>1</sub>y<sub>2</sub>
+            </li>
+            <br>
+            <li>
+                Par la formule originale<br>
+                <span class="vecteur">u</span> ⋅ <span class="vecteur">v</span> = ‖<span class="vecteur">u</span>‖&times;‖<span class="vecteur">v</span>‖&times;cos( ( <span class="vecteur">u</span> ; <span class="vecteur">v</span> ) )<br>
+                Autrement dit: Le produit scalaire de deux vecteur, c'est le produit des normes des deux vecteurs par le cosinus de l'angle entre les vecteurs.
+            </li>
+            </ul>
+            <br>
+        </p>
+        <p>
+            Comme exemple on a: <span style="color: red;"><span class="vecteur">u</span>=( 5 ; 2 )</span> et <span style="color: #2798df;"><span class="vecteur">v</span>=( 4 ; 1 )</span><br>
+            <span class="vecteur">u</span> ⋅ <span class="vecteur">v</span> = <span style="color: red;">5</span> &times; <span style="color: #2798df;">4</span> + <span style="color: red;">2</span> &times; <span style="color: #2798df;">1</span> = 22
+            <br><br>
+            Par ailleur avec la formule originale: <br>
+            <span class="vecteur">u</span> ⋅ <span class="vecteur">v</span><br> = ‖<span class="vecteur">u</span>‖&times;‖<span class="vecteur">u</span>‖&times;cos( 0 )=‖<span class="vecteur">u</span>‖<sup>2</sup><br>
+            ( cos(0)=1 car l'angle entre un vecteur et lui même est nul)<br>
+            Donc la norme d'un vecteur est la racine de son produit scalaire avec lui même
+            ‖<span class="vecteur">u</span>‖ = <span class="sqrt"><span class="vecteur">u</span> ⋅ <span class="vecteur">u</span></span> = <span class="sqrt"><span class="vecteur">u</span><sup>2</sup></span>
+            </menu>
+            <br>
+        </p>
+        <h2>Colinéarité</h2>
+        <p>
+            Deux vecteurs sont dit colinéaires si ils possèdent la même direction<br>
+            On peut rapidement remarquer la colinérarité de deux vecteurs visuellement, puisqu'ils on l'air "parallèles"<br>
+
+            Par coordonnées on peut remarquer la colinéarité par la relation de proportionnalité<br>
+            Exemple <span class="vecteur">u</span>=(2,3) <span class="vecteur">v</span>=(6,9) et <span class="vecteur">w</span>=(-2,-3) sont colinéaires entre eux car<br>
+            <span class="vecteur">v</span>=3&times;<span class="vecteur">u</span> et <span class="vecteur">w</span>=(-1)&times;<span class="vecteur">u</span><br>
+            Voici quelques exemples visuels (par ailleur <span class="vecteur">w</span> est l'opposé de <span class="vecteur">u</span>)
+        </p>
+        <img src="colinearite.jpg" class="images t75" alt="colinearite">
+        <p>
+            A contrario, les vecteurs <span class="vecteur">u</span>, <span class="vecteur">K</span> et <span class="vecteur">e</span> ne sont tout les trois pas colinéraires entre eux
+            <br><br>
+            Important: pour savoir si deux vecteurs sont orthogonaux (forment un angle droit), il suffit de regarder si leur produit scalaire est nul<br>
+            La raison est simple <span class="vecteur">u</span> ⋅ <span class="vecteur">v</span> = ‖<span class="vecteur">u</span>‖&times;‖<span class="vecteur">v</span>‖&times;cos( ( <span class="vecteur">u</span> ; <span class="vecteur">v</span> ) ) et deux vecteurs orthogonaux on un angle orienté de &plusmn;&pi;/2<br>
+            et cos(&pi;/2)=cos(-&pi;/2)=0 donc <span class="vecteur">u</span> ⋅ <span class="vecteur">v</span>=0<br>
+            (accessoire) si <span class="vecteur">u</span> ⋅ <span class="vecteur">v</span>=‖<span class="vecteur">u</span>‖&times;‖<span class="vecteur">v</span>‖ ou <span class="vecteur">u</span> ⋅ <span class="vecteur">v</span>= -‖<span class="vecteur">u</span>‖&times;‖<span class="vecteur">v</span>‖ alors <span class="vecteur">u</span> et <span class="vecteur">v</span> sont colinéaires<br>
+        </p>
+        <h2>Utilisation des points dans le repère</h2>
+        <p>
+            Petits rappel/apprentissage sur les repères<br>
+            Un repère est constitué d'une origine souvent appelée O, et d'axes<br>
+            (en 2D, abscisse et ordonée | en 3d abscisse ordonée et cote) il est appelé R<sup>2</sup> pour le plan orthonormé<br>
+            Une nouvelle définition d'un repère est disponible avec la théorie vectorielle:<br>
+            Un repère est constitué d'une origine O et de plusieurs vecteurs non colinéaires entre eux.<br>
+            Ce repère est noté et définit comme ( O , <span class="vecteur">i</span> , <span class="vecteur">j</span> ) avec <span class="vecteur">i</span> et <span class="vecteur">j</span> deux vecteurs unitaires non colinéaires<br>
+        </p>
+        <img src="repere.jpg" class="images t60" alt="repere">
+        <p>
+            Dans ces exemple, le repère n°3 décide juste de remplacer les fameux <span class="vecteur">i</span> et <span class="vecteur">j</span> par <span class="vecteur">u</span> et <span class="vecteur">v</span>.<br>
+            <br>
+            Dans ces exemple, le repère n°4 est tout a fait logique.<br>
+            Pourquoi ? Et bien c'est très logique, en mathématiques un vecteur n'est lié en aucuns cas à un point, il existe partout<br>
+            Il n'est donc pas obligatoire de mettre les vecteurs unitaires <span class="vecteur">i</span> et <span class="vecteur">j</span> partant du point O.<br>
+        </p>
+        <p>
+            Passons maintenant aux points.<br>
+            Bon, il est normal qu'on se dise, mais c'est bon les points je connais, coordonnées tout ça tout ça.<br>
+            Mais maintenant on vas parler vecteur entre deux points A=( x<sub>A</sub> ; y<sub>A</sub> ) et B=( x<sub>B</sub> ; y<sub>B</sub> )<br>
+        </p>
+        <img src="points1.jpg" class="images t60" alt="points1">
+        <p>
+            Et oui, pour aller de A vers B, quoi de mieux qu'un vecteur.<br>
+            Ce vecteur, que l'on vas nommer <span class="vecteur">AB</span> possède comme coordonnées ( x<sub>B</sub>-x<sub>A</sub> ; y<sub>B</sub>-y<sub>A</sub> ) pour la raison suivante.<br>
+        </p>
+        <img src="points2.jpg" class="images t60" alt="points2">
+        <p>
+            Trouver les coordonées du vecteur <span class="vecteur">AB</span> peut également se voir comme une simple relation de Chales.<br>
+            Et ceci est possible en considérant qu'un point est un vecteur.<br>
+            Le point A possède en réalité les mêmes coordonnées que le vecteur <span class="vecteur">OA</span> de même pour <span class="vecteur">OB</span><br>
+            Par relation de Chales, on se rend compte que le chemin pour aller de A à B, est le même que pour aller de A à O puis de O à B, donc que<br>
+            <span class="vecteur">AB</span> = <span class="vecteur">AO</span> + <span class="vecteur">OB</span><br>
+            Or <span class="vecteur">AO</span> est l'opposé du vecteur <span class="vecteur">OA</span> donc <span class="vecteur">AO</span> = -<span class="vecteur">OA</span><br>
+            Donc <span class="vecteur">AB</span> = -<span class="vecteur">OA</span> + <span class="vecteur">OB</span><br> = <span class="vecteur">OB</span>-<span class="vecteur">OA</span><br>
+            Ce qui confirme bien que les coordonées de B moins celles de A donne les coordonées de <span class="vecteur">AB</span><br>
+        </p>
+        <img src="points3.jpg" class="images t60" alt="points3">
+        <p>
+            On peut définir un point par rapport à un autre grace à un ou plusieurs vecteurs<br>
+            Exemple: B est l'image de A=( 2 ; 5 ) par la translation de vecteur <span class="vecteur">u</span>=( 2 ; -8 )<br>
+        </p>
+        <img src="points4.jpg" class="images t60" alt="points4">
+        <p>
+            On peut également trouver B en disant que A est représenté par <span class="vecteur">OA</span><br>
+            <span class="vecteur">OB</span>=<span class="vecteur">OA</span>+<span class="vecteur">u</span>=( 2 + 2 ; 5 + -8 )=( 4 ; -3 )
+            Donc le point B à pour coordonées ( 4 ; -3 )
+        </p>
+        <h2>Reconnaissance de figures à partir de vecteurs</h2>
+        <p>
+            Maintenant, voyons comment reconnaitre une figure à lorsque l'on ne connais que les points sans forcément avoir de repère visuel
+            <h3>Triangles</h3>
+            Un triangle possède 3 points donc 3 vecteurs qui vont d'un point à un autre.
+            Nos outils principaux seront: la norme et le produit scalaire
+            Comment faire alors pour reconnaitre les triangles basiques tel que l'isoscèle ?
+            Si un triangle ABC est isoscèle en A, alors on sait que ‖<span class="vecteur">AB</span>‖ = ‖<span class="vecteur">AC</span>‖
+            car simplement les cotés AC et AB d'un isoscèle en A sont égaux.
+            Pour reconnaitre un triangle équilatéral, il faut alors que ‖<span class="vecteur">AB</span>‖ = ‖<span class="vecteur">AC</span>‖ = ‖<span class="vecteur">BC</span>‖
+            Voici un exemple visuel:
+        </p>
+        <img src="formes_01.jpg" class="images t60" alt="formes_01">
+        <p>
+            <h3>Les parallélogrammes</h3>
+            Pour rappel, un parallélogramme est un quadrilatère (4 points 4 cotés) dont les cotés opposés sont alignés
+        </p>
+        <img src="formes_02.jpg" class="images t60" alt="formes_02">
+        <p>
+            Pour savoir si l'on à affaire à un parallélogramme
+        </p>
+        <p>
+            <h3>Les thèorèmes</h3>
+            Les théorèmes le plus importants du cours de 4<sup>e</sup> sont également là:
+        </p>
+        <h2>Repères non orthonormés</h2>
+        <p><br><br><br><br><br></p>
+    </div>
+
+</body>
+</html>
