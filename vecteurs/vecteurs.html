@@ -171,30 +171,81 @@
             Donc le point B à pour coordonées ( 4 ; -3 )
         </p>
         <h2>Reconnaissance de figures à partir de vecteurs</h2>
+        Maintenant, voyons comment reconnaitre une figure à lorsque l'on ne connais que les points sans forcément avoir de repère visuel
+        <h3>Triangles</h3>
         <p>
-            Maintenant, voyons comment reconnaitre une figure à lorsque l'on ne connais que les points sans forcément avoir de repère visuel
-            <h3>Triangles</h3>
-            Un triangle possède 3 points donc 3 vecteurs qui vont d'un point à un autre.
-            Nos outils principaux seront: la norme et le produit scalaire
-            Comment faire alors pour reconnaitre les triangles basiques tel que l'isoscèle ?
-            Si un triangle ABC est isoscèle en A, alors on sait que ‖<span class="vecteur">AB</span>‖ = ‖<span class="vecteur">AC</span>‖
-            car simplement les cotés AC et AB d'un isoscèle en A sont égaux.
-            Pour reconnaitre un triangle équilatéral, il faut alors que ‖<span class="vecteur">AB</span>‖ = ‖<span class="vecteur">AC</span>‖ = ‖<span class="vecteur">BC</span>‖
-            Voici un exemple visuel:
+            
+            Un triangle possède 3 points donc 3 vecteurs qui vont d'un point à un autre.<br>
+            Nos outils principaux seront: la norme et le produit scalaire<br>
+            Comment faire alors pour reconnaitre les triangles basiques tel que l'isoscèle ?<br>
+            Si un triangle ABC est isocèle en A, alors on sait que ‖<span class="vecteur">AB</span>‖ = ‖<span class="vecteur">AC</span>‖<br>
+            car simplement les cotés AC et AB d'un isoscèle en A sont égaux.<br>
+            Pour reconnaitre un triangle équilatéral, il faut alors que ‖<span class="vecteur">AB</span>‖ = ‖<span class="vecteur">AC</span>‖ = ‖<span class="vecteur">BC</span>‖<br>
+            Voici un exemple visuel:<br>
         </p>
         <img src="formes_01.jpg" class="images t60" alt="formes_01">
+        <h3>Les quadrilatères</h3>
         <p>
-            <h3>Les parallélogrammes</h3>
-            Pour rappel, un parallélogramme est un quadrilatère (4 points 4 cotés) dont les cotés opposés sont alignés
+            Pour un quadrilatère (4 points 4 cotés (ne se croisent pas) ) on peut y associer 4 vecteurs.<br>
+            Parmis les quadrilatères usuels se trouvent les trapèzes ( deux des cotés sont parallèles entre eux )<br>
+            Si on ABCD un trapèze avec <span class="vecteur">AB</span> et <span class="vecteur">CD</span> colinéaires, alors ABCD est un trapèze<br>
+            Il y à également les parallélogrammes ( deux des cotés sont parallèles entre eux et les deux autres aussi )<br>
+            Si ABCD est un parallélogramme ( ABCD dans le sens Horaire ) alors <br>
+            <span class="vecteur">AB</span>=<span class="vecteur">DC</span> et <span class="vecteur">BC</span>=<span class="vecteur">AD</span> , donc bien sur ‖<span class="vecteur">AB</span>‖ = ‖<span class="vecteur">DC</span>‖<br>
+            Les rectangles et les losanges sont une sous catégorie d'un parallèlogramme<br>
+            Pour les deux ‖<span class="vecteur">AB</span>‖ = ‖<span class="vecteur">BC</span>‖ = ‖<span class="vecteur">CD</span>‖ = ‖<span class="vecteur">DA</span>‖<br>
         </p>
         <img src="formes_02.jpg" class="images t60" alt="formes_02">
         <p>
-            Pour savoir si l'on à affaire à un parallélogramme
+            Par ailleur pour générer un parallèlogramme a partir d'un triangle, on prend un point et on y additionne les vecteurs liés a ce point<br>
+            Si on à le triangle ABC alors on peut créer ABCD en supposant "D=A+<span class="vecteur">AB</span>+<span class="vecteur">AC</span>"
+        </p>
+        <img src="formes_03.jpg" class="images t60" alt="formes_03">
+        <p>
+            Pour un rectangle, il suffit de montrer deux angles droits opposés, je veut dire par là que si on prend le coin inférieur gauche,<br>
+            alors il faut prendre le coin supérieur droit du quadrilatère.<br>
+            Rappel: pour montrer le fait qu'un angle soit un angle droit, on utilise le produit scalaire.<br>
+            Pour un carré on fait comme le rectangle mais on regarde aussi l'égalité de toutes les normes entres elles<br>
+            ou alors si on ne peut pour je ne sais quelle raison utiliser les normes, on prend l'angle entre les diagonales du parallelogramme.<br>
         </p>
         <p>
-            <h3>Les thèorèmes</h3>
-            Les théorèmes le plus importants du cours de 4<sup>e</sup> sont également là:
+            En résumé pour reconnaitre:
+            <ul class="listage">
+            <li>un Triangle isocèle en A ABC → ‖<span class="vecteur">AB</span>‖=‖<span class="vecteur">AC</span>‖</li>
+            <li>un Triangle equilatéral → ABC ‖<span class="vecteur">AB</span>‖=‖<span class="vecteur">AC</span>‖=‖<span class="vecteur">BC</span>‖</li>
+            <li>un Trapèze → ABCD  <span class="vecteur">AB</span> colinéaire à <span class="vecteur">CD</span> ou alors <span class="vecteur">AC</span> colinéaire à <span class="vecteur">BD</span></li>
+            <li>un parallélogramme → ABCD  <span class="vecteur">AB</span>=±<span class="vecteur">CD</span> ET <span class="vecteur">AC</span>=±<span class="vecteur">BD</span></li>
+            <li>un losange → ABCD  pareil que pour parallélogramme mais on rajoute ‖<span class="vecteur">AB</span>‖=‖<span class="vecteur">BC</span>‖=‖<span class="vecteur">CD</span>‖=‖<span class="vecteur">DA</span>‖ et <span class="vecteur">AC</span> ⋅ <span class="vecteur">BD</span>=0</li>
+            <li>un rectangle → ABCD soit on dit que <span class="vecteur">AB</span> ⋅ <span class="vecteur">AD</span>=0 et <span class="vecteur">CB</span> ⋅ <span class="vecteur">CD</span>=0 soit on regarde si c'est un parallèlograme avec un seul angle droit à vérifier</li>
+            <li>
+                un carré → ABCD ‖<span class="vecteur">AB</span>‖=‖<span class="vecteur">BC</span>‖=‖<span class="vecteur">CD</span>‖=‖<span class="vecteur">DA</span>‖ et angle droit en un seul point,<br>
+                ou si on veut uniquement utiliser des produits scalaires on regarde comme pour un rectangle mais on regarde aussi <span class="vecteur">AC</span> ⋅ <span class="vecteur">BD</span>=0 (losange avec cotés en angle droit) 
+            </li>
+            </ul>
+            Oui on à pas vu le triangle rectangle car il arrive juste après.<br>
         </p>
+        <h3>Les thèorèmes</h3>
+        Les théorèmes les plus importants du cours de 4<sup>e</sup> sont également là:
+        <h3>Théoreme de Pythagore</h3>
+        <p>
+            Si ABC est un triangle rectangle en A
+            alors AB<sup>2</sup> + AC<sup>2</sup> = BC<sup>2</sup>
+
+            Réciproquement:
+            Si AB<sup>2</sup> + AC<sup>2</sup> = BC<sup>2</sup> alors ACB est rectangle en A
+
+            Si ABC est un triangle rectangle en A
+            ‖<span class="vecteur">AB</span>‖<sup>2</sup> + ‖<span class="vecteur">AC</span>‖<sup>2</sup> = ‖<span class="vecteur">BC</span>‖<sup>2</sup>
+
+            Réciproquement si ‖<span class="vecteur">AB</span>‖<sup>2</sup> + ‖<span class="vecteur">AC</span>‖<sup>2</sup> = ‖<span class="vecteur">BC</span>‖<sup>2</sup> alors ABC est rectangle en A
+            
+            Comme ‖<span class="vecteur">u</span>‖² = <span class="vecteur">u</span> ⋅ <span class="vecteur">u</span>
+            Si <span class="vecteur">AB</span> ⋅ <span class="vecteur">AB</span> + <span class="vecteur">AC</span> ⋅ <span class="vecteur">AC</span> = <span class="vecteur">BC</span> ⋅ <span class="vecteur">BC</span>
+
+            Réciproquement si <span class="vecteur">AB</span> ⋅ <span class="vecteur">AB</span> + <span class="vecteur">AC</span> ⋅ <span class="vecteur">AC</span> = <span class="vecteur">BC</span> ⋅ <span class="vecteur">BC</span> alors ABC est rectangle en A
+        </p>
+        <img src="formes_04.jpg" class="images t60" alt="formes_04">
+        <h3>Théoreme de Thalès (vous le verrez jamais sauf cas très particliers) généralisé aux vecteurs</h3>
         <h2>Repères non orthonormés</h2>
         <p><br><br><br><br><br></p>
     </div>
